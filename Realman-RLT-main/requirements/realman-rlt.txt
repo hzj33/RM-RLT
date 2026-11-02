@@ -1,0 +1,46 @@
+# Core project dependencies for Realman-RLT.
+#
+# Install PyTorch separately first, because the correct wheel depends on the
+# local CUDA/driver version.  The tested CUDA 11.8 command is:
+#
+#   pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 \
+#     --index-url https://download.pytorch.org/whl/cu118
+#
+# Then install this file:
+#
+#   pip install -r requirements/realman-rlt.txt
+
+lerobot==0.4.4
+transformers==4.57.6
+datasets==4.8.5
+accelerate==1.14.0
+diffusers==0.35.2
+safetensors==0.8.0
+
+numpy==2.2.6
+pandas==2.3.3
+pyarrow==24.0.0
+h5py==3.16.0
+Pillow==12.2.0
+scipy==1.15.3
+einops==0.8.2
+tqdm==4.68.3
+
+# Use GUI OpenCV for video annotation windows.  Do not replace this with
+# opencv-python-headless on collection/annotation machines.
+opencv-python==4.12.0.88
+
+# Video and camera helpers.
+av==15.1.0
+imageio-ffmpeg
+pyrealsense2==2.57.7.10387
+
+# Optional but useful for plots / diagnostics.
+matplotlib
+
+# UR3e/legacy simulation helpers used by parts of the original project.
+# RealMan-only training does not need all of these, but keeping them here makes
+# the whole repository easier to run.
+mujoco
+mink
+
