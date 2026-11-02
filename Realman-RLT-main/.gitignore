@@ -1,0 +1,70 @@
+# Local third-party / external tool folders
+/third_party/*
+!/third_party/README.md
+Xrobot_tool/
+infer/
+XRoboToolkit-Teleop-Sample-Python/
+
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+
+# Local environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE / agent local state
+.cache/
+.claude/
+.codex/
+.vscode/
+.agents/
+
+# Data collection / datasets / training outputs
+data/
+datasets/
+outputs/
+logs/
+wandb/
+runs/
+checkpoints/
+
+# Large generated ML / robot data files
+*.hdf5
+*.h5
+*.parquet
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.npz
+*.npy
+
+# ROS / runtime logs
+*.bag
+*.db3
+rosbag2_*/
+*.log
+
+# Local secrets / accidental scratch files
+.env
+.env.*
+gitpass
+sys
+
+# vr_servoj_test/
